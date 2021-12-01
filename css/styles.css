@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-icon-wrapper: #f3f9fa;
 }
 
 /* Typography */
@@ -157,5 +158,44 @@ p {
   .list--tick .list__item {
     font-size: 1.8rem;
     padding-left: 0.5rem;
+  }
+}
+
+/* Icons */
+.icon-wrapper {
+  align-items: center;
+  background-color: var(--color-icon-wrapper);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 54px;
+  justify-content: center;
+  padding: 1rem;
+  width: 54px;
+}
+
+.icon-wrapper--dark {
+  background-color: #393939; /* FIXME: Use sass */
+}
+
+.icon {
+  fill: #fff;
+  height: 44px;
+  width: 44px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .icon-wrapper {
+    height: 44px;
+    padding: 0.8rem;
+    width: 44px;
+  }
+
+  .icon {
+    height: 38px;
+    width: 38px;
   }
 }
