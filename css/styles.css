@@ -199,3 +199,16 @@ p {
     width: 38px;
   }
 }
+
+/* Inputs */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--color-headings);
+  outline: none;
+  padding: 2.4rem 4.6rem;
+  width: 100%;
+}
