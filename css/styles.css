@@ -278,6 +278,12 @@ p {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
 /* Input Groups */
 .input-group {
   border-radius: 40px;
