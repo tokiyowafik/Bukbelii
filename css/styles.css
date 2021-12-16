@@ -131,7 +131,7 @@ p {
 
 .list__item {
   font-size: 2.4rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   margin-right: 2.5rem;
 }
 
@@ -300,4 +300,82 @@ p {
 
 .input-group .input {
   border: 0;
+}
+
+/* Cards */
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 7px;
+}
+
+/* Plans */
+.plan {
+  overflow: hidden;
+  color: #fff;
+  max-width: 500px;
+}
+
+.plan .card__header {
+  padding: 2.6rem 3rem;
+}
+
+.plan--primary .card__header {
+  background: var(--color-primary);
+}
+
+.plan--popular {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url("../images/popular.svg");
+  display: inline-block;
+  width: 4.5rem;
+  position: absolute;
+  top: -5px;
+  right: 30px;
+}
+
+.plan--secondary .card__header {
+  background: var(--color-secondary);
+}
+
+.plan__title {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__rental-month {
+  font-size: 2.4rem;
+  opacity: 0.8;
+  margin-right: 2rem;
+}
+
+.plan__caption {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.plan .card__body {
+  padding: 3rem;
+}
+
+.plan__items {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.plan .badge--primary {
+  background: #126de4;
+}
+
+.plan .badge--secondary {
+  background: #02cdf1;
 }
