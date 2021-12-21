@@ -421,3 +421,25 @@ p {
     font-size: 1.8rem;
   }
 }
+
+/* Quotes */
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #5c5577; /* FIXME: Use sass */
+}
+
+.quote::before {
+  content: open-quote;
+}
+
+.quote::after {
+  content: close-quote;
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    font-size: 2.4rem;
+  }
+}
