@@ -458,3 +458,49 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Callouts */
+.callout {
+  padding: 5rem 7rem;
+  grid-template-columns: 1fr;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+}
+
+.callout__text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.callout__heading {
+  margin-top: 0;
+  font-size: 4rem;
+  color: inherit;
+}
+
+.callout__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.callout__btn .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__text {
+    text-align: left;
+  }
+
+  .callout__btn {
+    align-self: center;
+  }
+}
